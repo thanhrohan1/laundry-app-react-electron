@@ -1,0 +1,64 @@
+// Modal Add Item Transaction
+.ReactModal__Overlay {
+  padding-top: 50px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modalSummaryPrint,
+.modalTransaction {
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+  h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+//MODAL SUMMARY
+.modalSummaryPrint .content-items {
+  max-height: 150px;
+}
+
+.modalAddCustomer {
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 600px;
+  background-color: white;
+  padding: 20px;
+}
+
+.modalHistory {
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 800px;
+  background-color: white;
+  padding: 20px 20px;
+  thead tr {
+    margin-right: 7px;
+  }
+}
+
+.modalTransaction .service {
+  max-height: 500px;
+}
+
+.modalTransaction .service:hover {
+  cursor: pointer;
+}

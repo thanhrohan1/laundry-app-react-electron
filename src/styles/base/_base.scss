@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $dark-grey;
+  font-family: "Roboto";
+  font-size: $m-size;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+.bg-biru {
+  background-color: $blue;
+}
+
+.bg-hijau {
+  background-color: $green;
+}
+
+.text-biru {
+  color: $blue;
+}
+
+.text-hijau {
+  color: $green;
+}
+
+.text-kuning {
+  color: $yellow;
+}
+
+.border-biru {
+  border: 0.5px solid $blue;
+}
+
+.rounded-app {
+  border-radius: 20px;
+}

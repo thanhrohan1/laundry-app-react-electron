@@ -1,0 +1,107 @@
+.show-customer {
+  top: 70px;
+  width: 233px;
+  left: 122px;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.transaksi .lanjutkan {
+  cursor: pointer;
+}
+
+.transaksi .customer:hover {
+  cursor: pointer;
+}
+
+.trans-content {
+  grid-auto-rows: 1fr;
+}
+
+.transaksi-kanan,
+.transaksi-kiri {
+  height: 540px;
+}
+
+.head-transaksi input[type="text"] {
+  color: $blue;
+}
+
+.table-transaksi thead {
+  border-bottom: 0.3px solid white;
+}
+
+.table-transaksi tbody {
+  height: 360px;
+}
+
+.transaksi-kiri .add-item {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.transaksi-kiri .btn-hapus {
+  transition: 0.3s;
+}
+
+.transaksi-kanan .total-harga {
+  border-bottom: 0.3px solid white;
+}
+
+// ===== QTY =====
+/* Chrome, Safari, Edge, Opera */
+.table-transaksi tbody input::-webkit-outer-spin-button,
+.table-transaksi tbody input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.table-transaksi tbody input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// ===== SCROLL =====
+/* width */
+.show-customer::-webkit-scrollbar,
+.table-transaksi tbody::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+.show-customer::-webkit-scrollbar-track,
+.table-transaksi tbody::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #555;
+  border-radius: 10px;
+}
+
+/* Handle */
+.show-customer::-webkit-scrollbar-thumb,
+.table-transaksi tbody::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.show-customer::-webkit-scrollbar-thumb:hover,
+.table-transaksi tbody::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+// TIME PICKER
+.react_times_button {
+  border-radius: 10px;
+  height: 36px !important;
+}
+
+.react_times_button .preview_container {
+  line-height: 36px;
+  height: 36px;
+  padding-left: 28px;
+  color: $blue;
+  font-weight: 600;
+}
+
+.react_times_button .preview_container svg {
+  top: 5px;
+  fill: $blue;
+}

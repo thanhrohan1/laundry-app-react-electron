@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Kalo bikin @apply, di run dari awal. */
+.text-blue {
+  @apply mx-auto text-blue-800;
+}
+
+.tombol-biru {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.tombol-biru:hover {
+  @apply bg-blue-700;
+}

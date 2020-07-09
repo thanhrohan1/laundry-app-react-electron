@@ -1,0 +1,359 @@
+@import "./base/settings";
+@import "./base/base";
+@import "./components/button";
+@import "./components/header";
+@import "./components/transaction";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/customer";
+@import "./components/print-paper";
+@import "./components/sweet-alert";
+@import "./components/service";
+@import "./components/history";
+@import "./components/checkout";
+@import "./components/report";
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 1200px !important;
+  }
+  // ALERT
+  .swal2-popup {
+    font-size: 1.1rem !important;
+  }
+  // Header
+  header {
+    height: 50px;
+    font-size: 14px !important;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+  .logo-group {
+    margin: 10px auto 0px auto !important;
+  }
+  .logo-text {
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+  .logo {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  // Footer
+  footer {
+    height: 30px;
+    background-color: $black;
+    h2 {
+      font-size: 12px;
+    }
+  }
+
+  // Home Page
+  .button-homepage {
+    font-size: 12px;
+  }
+  .info-home p {
+    font-size: 12px;
+  }
+  .dashboard canvas {
+    margin: auto !important;
+    width: 1200px !important;
+    height: 370px !important;
+  }
+
+  // Transaksi
+  .head-transaksi {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
+    button svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .show-customer {
+    top: 60px;
+    left: 95px;
+    width: 185px;
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .DateRangePicker .DateInput .DateInput_input {
+    font-size: 14px !important;
+    padding: 3px !important;
+    text-align: center !important;
+    margin: 0px !important;
+    font-weight: 600;
+  }
+  .transaksi-kanan,
+  .transaksi-kiri {
+    height: 390px;
+  }
+  .transaksi-kiri button.add-item {
+    font-size: 13px;
+    margin: 15px 2.5rem;
+    span {
+      font-size: 16px;
+    }
+  }
+  .table-transaksi {
+    font-size: 13px;
+  }
+  .table-transaksi tbody {
+    height: 260px;
+  }
+  .transaksi-kanan {
+    .angka-total {
+      margin: 10px 10px;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+    .detil-bayar {
+      margin: 0px 20px;
+      font-size: 13px;
+      .total-item .parfum .tgl-selesai {
+        margin-bottom: 10px;
+      }
+      select#tipe-bayar {
+        padding: 5px 10px;
+      }
+      .input-uang input {
+        font-size: 16px;
+      }
+      .kembalian {
+        display: inline-block;
+        width: 50%;
+        span {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  // Ambil checkout
+  .checkout {
+    .head-checkout {
+      font-size: 18px !important;
+      margin-bottom: 15px !important;
+    }
+    .cariFaktur * {
+      font-size: 13px;
+    }
+    .tableCheckout {
+      margin-top: 10px;
+      tbody button {
+        font-size: 12px;
+      }
+    }
+    .content-checkout {
+      height: 400px;
+    }
+  }
+  // Riwayat
+  .history {
+    .head-history {
+      font-size: 18px !important;
+      margin-bottom: 15px !important;
+    }
+    .filterHistory * {
+      font-size: 13px;
+    }
+    .tableHistory {
+      margin-top: 10px;
+      .status {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+    .content-history {
+      height: 400px;
+    }
+  }
+  // Layanan
+  .service {
+    form {
+      input {
+        font-size: 12px;
+        padding: 8px 10px;
+      }
+      button {
+        font-size: 12px;
+        padding: 7px 10px;
+      }
+      .radio-edit-service {
+        font-size: 12px;
+      }
+    }
+    .head-service {
+      font-size: 18px !important;
+      margin-bottom: 15px !important;
+    }
+    .add-item {
+      font-size: 13px;
+      span svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .tableService {
+      margin-top: 10px;
+      button {
+        padding: 0px !important;
+        font-size: 16px;
+      }
+    }
+    .content-service {
+      height: 400px;
+    }
+  }
+  // Customer
+  .customer {
+    form {
+      input {
+        font-size: 12px;
+        padding: 8px 10px;
+      }
+      button {
+        font-size: 12px;
+        padding: 7px 10px;
+      }
+    }
+    .head-customer {
+      font-size: 18px !important;
+      margin-bottom: 15px !important;
+    }
+    .add-item {
+      font-size: 13px;
+      span svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .tableCustomer {
+      margin-top: 10px;
+      button {
+        padding: 0px !important;
+        font-size: 16px;
+      }
+    }
+    .content-customer-table {
+      height: 400px;
+    }
+  }
+  // Report
+  .report {
+    .head-report {
+      font-size: 18px !important;
+      margin-bottom: 10px !important;
+      .filter-tgl p {
+        font-size: 14px;
+      }
+      .total-uang {
+        p {
+          font-size: 14px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+    .report-kiri,
+    .report-kanan {
+      height: 365px;
+    }
+    .head-in p {
+      font-size: 16px;
+    }
+  }
+
+  // MODAAALS
+  // AddCustomer
+  .modalAddCustomer {
+    max-width: 450px;
+    h1 {
+      font-size: 18px;
+      padding: 10px;
+    }
+    form {
+      label {
+        font-size: 12px;
+      }
+      input,
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Pilih Layanan
+  .modalPilihLayanan {
+    max-width: 450px;
+    h1 {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    input {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  // Summary Print
+  .modalSummaryPrint {
+    padding: 15px;
+    max-width: 450px;
+    h1 {
+      font-size: 18px;
+    }
+    .detail-customer,
+    .items,
+    .summary {
+      margin-bottom: 5px !important;
+    }
+    .content-print {
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+    .content-print * {
+      font-size: 12px;
+      h2 {
+        font-size: 14px;
+      }
+    }
+    button {
+      font-size: 14px;
+      padding: 5px 0px;
+    }
+  }
+  // Checkout
+  .modalCheckout {
+    button {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+
+// Tailwind import
+
+// Gunakan !important pada scss
+// .btn {
+//   @apply bg-red-500 #{!important};
+// }
